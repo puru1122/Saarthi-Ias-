@@ -6,7 +6,7 @@ export default function GKPage() {
     {icon:'🌦️', name:'Climate & Monsoon', sub:'Seasons · Monsoon · Winds', color:'bg-teal-500', link:'#'},
     {icon:'🐯', name:'Wildlife & Forests', sub:'National Parks · Species', color:'bg-green-500', link:'#'},
     {icon:'💎', name:'Minerals & Industries', sub:'Iron · Coal · Belts', color:'bg-orange-500', link:'#'},
-    {icon:'📜', name:'Constitution Basics', sub:'Articles · Writs · Schedules', color:'bg-violet-500', link:'#'},
+    {icon:'📜', name:'Constitution Basics', sub:'Articles · Writs · Schedules', color:'bg-violet-500', link:'/gk/constitution'},
     {icon:'🏛️', name:'Ancient & Medieval', sub:'Dynasties · Battles', color:'bg-pink-500', link:'#'},
     {icon:'🇮🇳', name:'Freedom Struggle', sub:'Acts · Movements · Leaders', color:'bg-red-500', link:'#'},
     {icon:'📊', name:'Economy & Banking', sub:'GDP · RBI · Budget', color:'bg-amber-600', link:'#'},
