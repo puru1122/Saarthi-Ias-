@@ -1,21 +1,21 @@
 export default function GKPage() {
   const categories = [
-    {icon:'🌊', name:'Rivers & Water Bodies', sub:'Rivers · Lakes · Dams', color:'bg-blue-500'},
-    {icon:'⛰️', name:'Mountains & Passes', sub:'Peaks · Ranges · Passes', color:'bg-gray-400'},
-    {icon:'🪨', name:'Soils & Agriculture', sub:'Soil types · Crops · Seasons', color:'bg-amber-500'},
-    {icon:'🌦️', name:'Climate & Monsoon', sub:'Seasons · Monsoon · Winds', color:'bg-teal-500'},
-    {icon:'🐯', name:'Wildlife & Forests', sub:'National Parks · Species', color:'bg-green-500'},
-    {icon:'💎', name:'Minerals & Industries', sub:'Iron · Coal · Belts', color:'bg-orange-500'},
-    {icon:'📜', name:'Constitution Basics', sub:'Articles · Writs · Schedules', color:'bg-violet-500'},
-    {icon:'🏛️', name:'Ancient & Medieval', sub:'Dynasties · Battles', color:'bg-pink-500'},
-    {icon:'🇮🇳', name:'Freedom Struggle', sub:'Acts · Movements · Leaders', color:'bg-red-500'},
-    {icon:'📊', name:'Economy & Banking', sub:'GDP · RBI · Budget', color:'bg-amber-600'},
-    {icon:'🔬', name:'Science & Technology', sub:'Space · Defence · Bio', color:'bg-blue-600'},
-    {icon:'🏆', name:'Awards & Honours', sub:'Bharat Ratna · Nobel', color:'bg-yellow-500'},
-    {icon:'🌍', name:'International Orgs', sub:'UN · WTO · IMF · SAARC', color:'bg-teal-600'},
-    {icon:'🏅', name:'Sports & Games', sub:'Olympics · CWG · National', color:'bg-purple-500'},
-    {icon:'🎭', name:'Art Culture & Dance', sub:'Classical · Folk · UNESCO', color:'bg-pink-600'},
-    {icon:'📚', name:'Books & Authors', sub:'Famous works · Nobel', color:'bg-gray-600'},
+    {icon:'🌊', name:'Rivers & Water Bodies', sub:'Rivers · Lakes · Dams', color:'bg-blue-500', link:'/gk/rivers'},
+    {icon:'⛰️', name:'Mountains & Passes', sub:'Peaks · Ranges · Passes', color:'bg-gray-400', link:'#'},
+    {icon:'🪨', name:'Soils & Agriculture', sub:'Soil types · Crops · Seasons', color:'bg-amber-500', link:'#'},
+    {icon:'🌦️', name:'Climate & Monsoon', sub:'Seasons · Monsoon · Winds', color:'bg-teal-500', link:'#'},
+    {icon:'🐯', name:'Wildlife & Forests', sub:'National Parks · Species', color:'bg-green-500', link:'#'},
+    {icon:'💎', name:'Minerals & Industries', sub:'Iron · Coal · Belts', color:'bg-orange-500', link:'#'},
+    {icon:'📜', name:'Constitution Basics', sub:'Articles · Writs · Schedules', color:'bg-violet-500', link:'#'},
+    {icon:'🏛️', name:'Ancient & Medieval', sub:'Dynasties · Battles', color:'bg-pink-500', link:'#'},
+    {icon:'🇮🇳', name:'Freedom Struggle', sub:'Acts · Movements · Leaders', color:'bg-red-500', link:'#'},
+    {icon:'📊', name:'Economy & Banking', sub:'GDP · RBI · Budget', color:'bg-amber-600', link:'#'},
+    {icon:'🔬', name:'Science & Technology', sub:'Space · Defence · Bio', color:'bg-blue-600', link:'#'},
+    {icon:'🏆', name:'Awards & Honours', sub:'Bharat Ratna · Nobel', color:'bg-yellow-500', link:'#'},
+    {icon:'🌍', name:'International Orgs', sub:'UN · WTO · IMF · SAARC', color:'bg-teal-600', link:'#'},
+    {icon:'🏅', name:'Sports & Games', sub:'Olympics · CWG · National', color:'bg-purple-500', link:'#'},
+    {icon:'🎭', name:'Art Culture & Dance', sub:'Classical · Folk · UNESCO', color:'bg-pink-600', link:'#'},
+    {icon:'📚', name:'Books & Authors', sub:'Famous works · Nobel', color:'bg-gray-600', link:'#'},
   ]
 
   return (
@@ -71,12 +71,12 @@ export default function GKPage() {
         </div>
         <div className="grid grid-cols-4 gap-3">
           {categories.map((cat) => (
-            <div key={cat.name} className="bg-white border border-gray-100 rounded-xl p-4 cursor-pointer hover:border-gray-200 transition-all">
+            <a href={cat.link} key={cat.name} className="bg-white border border-gray-100 rounded-xl p-4 hover:border-gray-200 transition-all block no-underline">
               <div className="text-2xl mb-2">{cat.icon}</div>
               <div className="text-sm font-medium text-gray-900 leading-tight">{cat.name}</div>
               <div className="text-xs text-gray-400 mt-1">{cat.sub}</div>
               <div className={`h-0.5 rounded-full mt-3 ${cat.color}`}></div>
-            </div>
+            </a>
           ))}
         </div>
         <div className="mt-6 bg-blue-50 border border-blue-100 rounded-xl p-4 flex items-center justify-between">
